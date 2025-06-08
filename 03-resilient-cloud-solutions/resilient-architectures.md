@@ -3,26 +3,26 @@
 ## Multi AZ in AWS
 
 - Services where multi AZ must be enabled manually:
-    - EFS, ELB, ASG, Elastic Beanstalk
-    - RDS, OpenSearch: multi AZ used for failovers
-    - Aurora:
-        - Data is stored automatically across multi AZ
-        - It can have multi AZ for DB itself (multi master, read replicas, multi AZ deployments)
-    - OpenSearch (managed): multi master
-    - Jenkins (self-hosted): multi master
+  - EFS, ELB, ASG, Elastic Beanstalk
+  - RDS, OpenSearch: multi AZ used for failovers
+  - Aurora:
+    - Data is stored automatically across multi AZ
+    - It can have multi AZ for DB itself (multi master, read replicas, multi AZ deployments)
+  - OpenSearch (managed): multi master
+  - Jenkins (self-hosted): multi master
 - Services where multi az is implicitly enabled:
-    - S3 (except OneZone-IA)
-    - DynamoDB: data is replicated by default
-    - All of AWS proprietary managed services
+  - S3 (except OneZone-IA)
+  - DynamoDB: data is replicated by default
+  - All of AWS proprietary managed services()
 
 ## EBS - Multi AZ
 
 - EBS is tied to a single AZ
 - How can we make EBS multi AZ?
-    - We crate an ASG with 1 min/max/desired capacity
-    - We create a lifecycle hook for `Terminate`: make a snapshot of the EBS volume
-    - We create a lifecycle hook fot `Start`: copy the snapshot, create an EBS, attach it to the instance
-- Note: for PIOPS volumes (IO1), to get max performance after snapshot,  read the entire volume once (pre warming of IO blocks)
+  - We crate an ASG with 1 min/max/desired capacity
+  - We create a lifecycle hook for `Terminate`: make a snapshot of the EBS volume
+  - We create a lifecycle hook fot `Start`: copy the snapshot, create an EBS, attach it to the instance
+- Note: for PIOPS volumes (IO1), to get max performance after snapshot, read the entire volume once (pre warming of IO blocks)
 
 ## Blue-Green Architecture
 
@@ -52,9 +52,9 @@
 - Routing to multiple regions: latency, geo-location, geo-proximity routing
 - Health Check: we can have DNS failover to different regions
 - Health Check types:
-    1. Health checks monitoring an endpoint: application server, other AWS resource
-    2. Health checks that monitor other health checks (calculated health checks)
-    3. Health check that monitor CloudWatch alarms: example throttles of DynamoDB, custom metrics, etc.
+  1. Health checks monitoring an endpoint: application server, other AWS resource
+  2. Health checks that monitor other health checks (calculated health checks)
+  3. Health check that monitor CloudWatch alarms: example throttles of DynamoDB, custom metrics, etc.
 
 ## CloudFormation StackSets
 
@@ -68,4 +68,4 @@
 ## Multi Region CodePipeline
 
 - Reference: [https://aws.amazon.com/blogs/devops/using-aws-codepipeline-to-perform-multi-region-deployments/](https://aws.amazon.com/blogs/devops/using-aws-codepipeline-to-perform-multi-region-deployments/)
-- In order to do multi region deployments, the artifact store must be copied across regions 
+- In order to do multi region deployments, the artifact store must be copied across regions
