@@ -143,6 +143,8 @@
     - **Subscription Filter**: filter which logs events to deliver to the destination
     - With subscription filters we can aggregate logs from different accounts and regions into a single account. To accomplish this we must use a **Cross-Account Subscription**
 
+    subscriptions is for real-time time when we want to stream logs fast, when its not so important we can export to s3 with batches 
+
 ### Live Tail
 
 - CloudWatch Logs feature which can be used for tailing log streams in real time
@@ -272,3 +274,9 @@
     - Visual Monitoring: compare a screenshot taken during a canary run with a baseline screenshot
     - Canary Recorder: used with CloudWatch Synthetics Recorder - used to record actions on a website and automatically generate a test script for that
     - GUI Workflow Builder: verifies that actions can be taken on a webpage (example: test a webpage with a login form)
+
+
+
+
+## Hands on - cloudwatch logs 
+
