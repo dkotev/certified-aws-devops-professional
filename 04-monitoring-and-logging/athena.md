@@ -19,3 +19,8 @@
 - Allows us to run SQL queries across data stored in relational, non-relational, object and custom data sources (AWS or on-premises)
 - This can be accomplished with Data Source Connectors that run AWS Lambda to execute Federated Queries
 - Results will be stored in S3 buckets
+
+
+
+
+EXAM TIP: every time that we need to analyze in s3 using serverless sql, Use Athena 
