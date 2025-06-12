@@ -2,7 +2,11 @@
 
 - Provides governance, compliance and audit for an AWS account
 - CloudTrail is enabled by default!
-- Provides a history of events/API calls made within an AWS account
+- Provides a history of events/API calls made within an AWS account by:
+    - console
+    - sdk 
+    - cli
+    - aws services
 - It can put logs into CloudWatch Logs or S3
 - A trail can be applied to All Regions (default) or a single Region
 - In case of a resource deletion, to investigate it (who did it), we have to look inside CloudTrail first
@@ -37,15 +41,27 @@
         - Hitting service limits
         - Bursts of AWS IAM actions
         - Gaps in periodic maintenance activity
-    - CloudTrail Insights analyzes normal management events to create a baseline and then continuously analyzes write events to detect unusual patterns
+    - CloudTrail Insights analyzes normal management events to create a baseline and then continuously analyzes write events to detect unusual 
+    patterns
     - Insights events will appear in CloudTrail console
     - They are also sent to S3 (if enabled)
     - An EventBridge event is generated (for automation needs)
+    ![alt text](image.png)
+
 
 ## CloudTrail Events Retention
 
 - Events by default are stored for 90 days in CloudTrail
-- To keep events beyond these period we can send these events to S3 and use Athena to analyze them
+- To keep events beyond these period we can send these events to S3 and use *Athena* to analyze them
+
+![alt text](image-1.png)
+
+## Cloudtrail Intercept API calls 
+
+e.g 
+- recieve notification api call when deletetable api call in dynamodb -> logs in cloudtrail -> eventbridge -> sns and inform us when someone deletes table 
+- recieve notification when user AssumeRole -> cloudtrail -> eventbridge -> sns
+- user edit SG -> cloudtrain-> eventbridge -> sns 
 
 ## Log Integrity
 

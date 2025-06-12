@@ -9,12 +9,15 @@
     - **Instance Status Check**:
         - Monitor software/network configuration of our instances. For example monitor for invalid network configurations, exhausted memory, etc.
         - As a resolution we can reboot the instance or change the instance configuration
+    - **Attached EBS status checks**
+        - Monitor EBS volumes attched to your instance ( reacheable & complete I/O Operations)
 
 ## CloudWatch Metrics and Recovery
 
 - CloudWatch Metrics (1 minute interval):
     - `StatusCheckFailed_System`
     - `StatusCheckFailed_Instance`
+    - `StatusCheckFailed_AttachedEBS`
     - `StatusCheckFailed` (for both)
 - Recovery option 1: use a CloudWatch Alarm (preferred)
     - It will recover the instance with the same private/public IP, EIP, metadata and placement group

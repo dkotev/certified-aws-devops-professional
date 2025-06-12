@@ -46,6 +46,7 @@
 ## Resource-based Policies
 
 - We can manage permissions for a specific event bus. Example: allow/deny events from another AWS account or AWS region
+- Example: allow/deny events from another AWS acconts or AWS region 
 - Use cases: aggregate all events from our AWS Organization in a single AWS account/region
 
 ## Content Filtering
