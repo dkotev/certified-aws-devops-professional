@@ -8,8 +8,8 @@
 
 - We can share an AMI with another AWS account
 - Sharing an AMI does not affect the ownership of the AMI
-- We can share AMIs that have unencrypted volumes and volumes that are encrypted with a customer managed key
-- If we share an AMI with encrypted volumes, we must share also any customer managed keys to be able to decrypt the volume
+- **We can share AMIs that have unencrypted volumes and volumes that are encrypted with a customer managed key**
+- **If we share an AMI with encrypted volumes, we must share also any customer managed keys to be able to decrypt the volume**
 
 ## Cross-Account AMI Copy
 
@@ -19,19 +19,18 @@
 ## EC2 Instance Compliance
 
 - AWS Config:
-    - Ensures instances have proper AWS configurations (example: not open SSH ports, etc.)
-    - Offers audit and compliance over time
+  - Ensures instances have proper AWS configurations (example: not open SSH ports, etc.)
+  - Offers audit and compliance over time
 - Amazon Inspector:
-    - Does security vulnerability scan from within the OS using an agent
-    - Also does network scans outside of EC2 instances (agent is optional)
+  - Does security vulnerability scan from within the OS using an agent
+  - Also does network scans outside of EC2 instances (agent is optional)
 - Systems Manager:
-    - Runs automation, patches, commands, inventory at scale
+  - Runs automation, patches, commands, inventory at scale
 - Service Catalog:
-    - Restrict how EC2 instances can be launched to minimize configurations
+  - Restrict how EC2 instances can be launched to minimize configurations
 - Configuration Management:
-    - Tools: 
-        - SSM
-        - Opsworks
-        - EC2 User Data
-    - They ensure EC2 instances have proper configuration files
-
+  - Tools:
+    - SSM
+    - Opsworks
+    - EC2 User Data
+  - They ensure EC2 instances have proper configuration files

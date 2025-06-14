@@ -15,6 +15,24 @@
 - Enables us to create pre-approved baselines and configuration options for AWS accounts in our organization (eg. VPC default configuration, subnets, regions, etc.)
 - Uses AWS Service Catalog to provision new AWS accounts
 
+## Detect and Remediate Policy Violations
+
+- Guardrails:
+  - Provide ongoing governance for our Control Tower environment
+  - We can have 2 kinds of guardrails:
+    - **Preventive (using SCPs)**: for example disallow creation of access keys for the root user
+    - **Detective (using AWS Config)**: for example detect wether MFA for the root user is enabled
+- Guardrail levels:
+  - Mandatory:
+    - Automatically enabled and enforced by AWS Control Tower
+    - Example: disallow public read access to the Log Archive account
+  - Strongly Recommended:
+    - Based on AWS best practices (optional)
+    - Example: enable encryption for EBS volumes attached to EC2 instances
+  - Elective:
+    - Commonly used by enterprises (optional)
+    - Example: disallow delete actions without MFA on S3 buckets
+
 ## Landing Zones
 
 - They are automatically provisioned, secure, and compliant multi-account environments based on AWS best practices
@@ -69,21 +87,3 @@
   - AWS Enterprise Support Plan: turns on the Enterprise Support Plan
   - Delete The AWS Default VPC: deletes the default VPCs in all AWS regions
 - The Terraform module is maintained by AWS
-
-## Detect and Remediate Policy Violations
-
-- Guardrails:
-  - Provide ongoing governance for our Control Tower environment
-  - We can have 2 kinds of guardrails:
-    - **Preventive (using SCPs)**: for example disallow creation of access keys for the root user
-    - **Detective (using AWS Config)**: for example detect wether MFA for the root user is enabled
-- Guardrail levels:
-  - Mandatory:
-    - Automatically enabled and enforced by AWS Control Tower
-    - Example: disallow public read access to the Log Archive account
-  - Strongly Recommended:
-    - Based on AWS best practices (optional)
-    - Example: enable encryption for EBS volumes attached to EC2 instances
-  - Elective:
-    - Commonly used by enterprises (optional)
-    - Example: disallow delete actions without MFA on S3 buckets
