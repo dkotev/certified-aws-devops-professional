@@ -65,3 +65,7 @@
 - If GuarDuty is already enabled, the CloudFormation Stack deployment will fail
 - **We can use Custom Resources (Lambda) to conditionally enable GuarDuty if it is not enabled yet** - exam question
 - We can then deploy this across all the organization using Stack Sets
+
+
+
+- Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts

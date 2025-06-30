@@ -25,3 +25,6 @@
     - Regex Classification
     - PII Classification
     - Support Vector Machine–Based Classifier
+
+
+    - Amazon Macie since this is just a security service that uses machine learning to automatically discover, classify, and protect sensitive data in AWS

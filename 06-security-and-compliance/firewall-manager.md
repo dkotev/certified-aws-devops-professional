@@ -42,3 +42,7 @@
   - Import existing firewalls: import firewalls using Resource Sets
 - **Policy Type: Route 53 Resolver Firewall**:
   - Manage associations between Resolver DNS Firewall Rule Groups and VPCs in all accounts in an AWS Organization
+
+
+
+  AWS Shield is a managed Distributed Denial of Service (DDoS) protection service and not an automated security assessment. 
