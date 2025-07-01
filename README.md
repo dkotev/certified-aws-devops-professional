@@ -109,3 +109,48 @@ It validates an examinee's ability to:
 - Number of questions: 75
 
 - Time: 190 minutes to complete the exam (with a possibility to request 30 minutes extra for non-native english speakers)
+
+
+# Key Concepts
+## These topics are the main concepts for your exam prepration rated by 💀.
+
+Domain 1: SDLC Automation
+Amazon CodeGuru 💀
+AWS CodePipeline 💀💀💀💀💀
+AWS CodeBuild 💀💀💀💀
+AWS CodeCommit 💀💀💀
+Amazon ECS 💀💀💀
+Amazon EKS 💀💀
+AWS Cloudformation 💀💀💀💀💀
+What is SDLC? 💀💀
+Domain 2: Configuration Management and IaC
+AWS System Manager 💀💀💀💀💀
+AWS Config 💀💀💀
+AWS OpsWorks 💀
+What is Configuration Management? 💀💀💀
+Domain 3: Resilient Cloud Solutions
+Amazon Route53 💀💀💀
+AWS Resource Access Manager 💀
+Understand resiliency patterns and trade-offs to architect efficiently in the cloud 💀💀
+Shared Responsibility Model for Resiliency 💀💀
+Domain 4: Monitoring and Logging
+AWS CloudTrail 💀💀
+Amazon CloudWatch 💀💀💀💀
+Amazon CloudWatch Logs 💀💀💀💀
+VPC Flow Logs 💀
+AWS X-Ray 💀💀
+Domain 5: Incident and Event Response
+What is Incident Management? 💀💀
+Remediating Noncompliant Resources with AWS Config 💀💀💀
+Domain 6: Security and Compliance
+AWS Organization 💀💀💀💀💀
+AWS Identity Center 💀💀💀💀💀
+AWS IAM 💀💀💀💀💀
+Amazon GuardDuty 💀
+Amazon Cognito 💀💀
+AWS Directory Service 💀
+AWS Inspector 💀💀
+AWS Security Hub 💀
+AWS Config 💀💀💀💀
+AWS Firewall Manager 💀
+AWS WAF 💀

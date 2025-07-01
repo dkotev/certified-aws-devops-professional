@@ -10,6 +10,7 @@
 
 ## resilient cloud solution 
 - read replica cannot be configured in another region 
+- in order to use the route 53 ARC with ALB we need to disable the croze-zone replication on it 
 
 ## monitor and logging 
 - AWS config can't automatically remediate the accounts rules 
