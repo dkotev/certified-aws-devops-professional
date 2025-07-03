@@ -124,26 +124,26 @@ Domain 1: SDLC Automation:
 - Amazon EKS 💀💀
 - AWS Cloudformation 💀💀💀💀💀
 - What is SDLC? 💀💀
-- Domain 2: Configuration Management and IaC
+Domain 2: Configuration Management and IaC:
 - AWS System Manager 💀💀💀💀💀
 - AWS Config 💀💀💀
 - AWS OpsWorks 💀
 - What is Configuration Management? 💀💀💀
-- Domain 3: Resilient Cloud Solutions
+Domain 3: Resilient Cloud Solutions:
 - Amazon Route53 💀💀💀
 - AWS Resource Access Manager 💀
 - Understand resiliency patterns and trade-offs to architect efficiently in the cloud 💀💀
 - Shared Responsibility Model for Resiliency 💀💀
-- Domain 4: Monitoring and Logging
+Domain 4: Monitoring and Logging:
 - AWS CloudTrail 💀💀
 - Amazon CloudWatch 💀💀💀💀
 - Amazon CloudWatch Logs 💀💀💀💀
 - VPC Flow Logs 💀
 - AWS X-Ray 💀💀
-- Domain 5: Incident and Event Response
+Domain 5: Incident and Event Response:
 - What is Incident Management? 💀💀
 - Remediating Noncompliant Resources with AWS Config 💀💀💀
-- Domain 6: Security and Compliance
+Domain 6: Security and Compliance:
 - AWS Organization 💀💀💀💀💀
 - AWS Identity Center 💀💀💀💀💀
 - AWS IAM 💀💀💀💀💀
